@@ -14,13 +14,13 @@ class BandsContainer extends Component {
   }
 }
 
-// const mapStateToProps = state => {
-//   return {
-//       bands: state.bands
-//   }
-// }
+const mapStateToProps = state => {
+  return {
+      bands: state.bands
+  }
+}
 
-const mapStateToProps = ({ bands }) => ({ bands })
+// const mapStateToProps = ({ bands }) => ({ bands })
 
 
 const mapDispatchToProps = dispatch => ({ addBand: band => dispatch({ type: "ADD_BAND", band }) })
